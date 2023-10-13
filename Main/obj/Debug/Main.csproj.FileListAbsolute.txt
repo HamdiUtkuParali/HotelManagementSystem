@@ -1,0 +1,16 @@
+C:\Users\paral\source\repos\HotelManagementSystem\Main\bin\Debug\Main.exe.config
+C:\Users\paral\source\repos\HotelManagementSystem\Main\bin\Debug\Main.exe
+C:\Users\paral\source\repos\HotelManagementSystem\Main\bin\Debug\Main.pdb
+C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.csproj.AssemblyReference.cache
+C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.Form1.resources
+C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.Properties.Resources.resources
+C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.csproj.GenerateResource.cache
+C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.csproj.CoreCompileInputs.cache
+C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.exe
+C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.pdb
+C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.csproj.CopyComplete
+C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.Dashboard.resources
+C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.UserControls.uc_CreateRes.resources
+C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.UserControls.uc_CheckIn.resources
+C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.UserControls.uc_Lists.resources
+C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.UserControls.uc_TourRegister.resources
