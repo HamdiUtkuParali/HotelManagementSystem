@@ -10,7 +10,13 @@ C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.exe
 C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.pdb
 C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.csproj.CopyComplete
 C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.Dashboard.resources
-C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.UserControls.uc_CreateRes.resources
-C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.UserControls.uc_CheckIn.resources
-C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.UserControls.uc_Lists.resources
-C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.UserControls.uc_TourRegister.resources
+C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.UserControls.uc_CustomersADU.resources
+C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.UserControls.uc_CustomersSearch.resources
+C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.UserControls.uc_ReservationADU.resources
+C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.UserControls.uc_ReservationSearch.resources
+C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.UserControls.uc_RoomsADU.resources
+C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.UserControls.uc_RoomsSearch.resources
+C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.UserControls.uc_ToursADU.resources
+C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.UserControls.uc_ToursSearch.resources
+C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.UserControls.uc_WorkersADU.resources
+C:\Users\paral\source\repos\HotelManagementSystem\Main\obj\Debug\Main.UserControls.uc_WorkersSearch.resources

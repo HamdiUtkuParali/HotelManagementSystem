@@ -66,29 +66,65 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControls\uc_Lists.cs">
+    <Compile Include="UserControls\ADU\uc_CustomersADU.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\uc_Lists.Designer.cs">
-      <DependentUpon>uc_Lists.cs</DependentUpon>
+    <Compile Include="UserControls\ADU\uc_CustomersADU.Designer.cs">
+      <DependentUpon>uc_CustomersADU.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\uc_TourRegister.cs">
+    <Compile Include="UserControls\Search\uc_CustomersSearch.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\uc_TourRegister.Designer.cs">
-      <DependentUpon>uc_TourRegister.cs</DependentUpon>
+    <Compile Include="UserControls\Search\uc_CustomersSearch.Designer.cs">
+      <DependentUpon>uc_CustomersSearch.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\uc_CheckIn.cs">
+    <Compile Include="UserControls\ADU\uc_ReservationADU.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\uc_CheckIn.Designer.cs">
-      <DependentUpon>uc_CheckIn.cs</DependentUpon>
+    <Compile Include="UserControls\ADU\uc_ReservationADU.Designer.cs">
+      <DependentUpon>uc_ReservationADU.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\uc_CreateRes.cs">
+    <Compile Include="UserControls\Search\uc_ReservationSearch.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\uc_CreateRes.Designer.cs">
-      <DependentUpon>uc_CreateRes.cs</DependentUpon>
+    <Compile Include="UserControls\Search\uc_ReservationSearch.Designer.cs">
+      <DependentUpon>uc_ReservationSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ADU\uc_RoomsADU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ADU\uc_RoomsADU.Designer.cs">
+      <DependentUpon>uc_RoomsADU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Search\uc_RoomsSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Search\uc_RoomsSearch.Designer.cs">
+      <DependentUpon>uc_RoomsSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ADU\uc_ToursADU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ADU\uc_ToursADU.Designer.cs">
+      <DependentUpon>uc_ToursADU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Search\uc_ToursSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Search\uc_ToursSearch.Designer.cs">
+      <DependentUpon>uc_ToursSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ADU\uc_WorkersADU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ADU\uc_WorkersADU.Designer.cs">
+      <DependentUpon>uc_WorkersADU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Search\uc_WorkersSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Search\uc_WorkersSearch.Designer.cs">
+      <DependentUpon>uc_WorkersSearch.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
@@ -105,17 +141,35 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UserControls\uc_Lists.resx">
-      <DependentUpon>uc_Lists.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\ADU\uc_CustomersADU.resx">
+      <DependentUpon>uc_CustomersADU.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\uc_TourRegister.resx">
-      <DependentUpon>uc_TourRegister.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\Search\uc_CustomersSearch.resx">
+      <DependentUpon>uc_CustomersSearch.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\uc_CheckIn.resx">
-      <DependentUpon>uc_CheckIn.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\ADU\uc_ReservationADU.resx">
+      <DependentUpon>uc_ReservationADU.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\uc_CreateRes.resx">
-      <DependentUpon>uc_CreateRes.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\Search\uc_ReservationSearch.resx">
+      <DependentUpon>uc_ReservationSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ADU\uc_RoomsADU.resx">
+      <DependentUpon>uc_RoomsADU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Search\uc_RoomsSearch.resx">
+      <DependentUpon>uc_RoomsSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ADU\uc_ToursADU.resx">
+      <DependentUpon>uc_ToursADU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Search\uc_ToursSearch.resx">
+      <DependentUpon>uc_ToursSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ADU\uc_WorkersADU.resx">
+      <DependentUpon>uc_WorkersADU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Search\uc_WorkersSearch.resx">
+      <DependentUpon>uc_WorkersSearch.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Main.UserControls
 {
-    public partial class uc_Lists : UserControl
+    public partial class uc_ReservationADU : UserControl
     {
-        public uc_Lists()
+        public uc_ReservationADU()
         {
             InitializeComponent();
         }

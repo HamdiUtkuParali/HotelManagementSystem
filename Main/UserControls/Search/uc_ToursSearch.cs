@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace Main.UserControls
 {
-    public partial class uc_CreateRes : UserControl
+    public partial class uc_ToursSearch : UserControl
     {
-        public uc_CreateRes()
+        public uc_ToursSearch()
         {
             InitializeComponent();
         }
-
-        
     }
 }

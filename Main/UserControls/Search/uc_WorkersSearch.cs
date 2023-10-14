@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Main.UserControls
 {
-    public partial class uc_CheckIn : UserControl
+    public partial class uc_WorkersSearch : UserControl
     {
-        public uc_CheckIn()
+        public uc_WorkersSearch()
         {
             InitializeComponent();
         }
