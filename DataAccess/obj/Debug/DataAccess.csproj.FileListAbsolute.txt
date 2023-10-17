@@ -1,0 +1,14 @@
+C:\Users\paral\source\repos\HotelManagementSystem\DataAccess\bin\Debug\DataAccess.dll.config
+C:\Users\paral\source\repos\HotelManagementSystem\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\paral\source\repos\HotelManagementSystem\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\paral\source\repos\HotelManagementSystem\DataAccess\bin\Debug\Entities.dll
+C:\Users\paral\source\repos\HotelManagementSystem\DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\paral\source\repos\HotelManagementSystem\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\paral\source\repos\HotelManagementSystem\DataAccess\bin\Debug\Entities.pdb
+C:\Users\paral\source\repos\HotelManagementSystem\DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\paral\source\repos\HotelManagementSystem\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\paral\source\repos\HotelManagementSystem\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+C:\Users\paral\source\repos\HotelManagementSystem\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\paral\source\repos\HotelManagementSystem\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+C:\Users\paral\source\repos\HotelManagementSystem\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\paral\source\repos\HotelManagementSystem\DataAccess\obj\Debug\DataAccess.pdb

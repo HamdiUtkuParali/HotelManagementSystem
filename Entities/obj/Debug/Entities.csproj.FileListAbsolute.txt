@@ -1,0 +1,6 @@
+C:\Users\paral\source\repos\HotelManagementSystem\Entities\bin\Debug\Entities.dll
+C:\Users\paral\source\repos\HotelManagementSystem\Entities\bin\Debug\Entities.pdb
+C:\Users\paral\source\repos\HotelManagementSystem\Entities\obj\Debug\Entities.csproj.AssemblyReference.cache
+C:\Users\paral\source\repos\HotelManagementSystem\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+C:\Users\paral\source\repos\HotelManagementSystem\Entities\obj\Debug\Entities.dll
+C:\Users\paral\source\repos\HotelManagementSystem\Entities\obj\Debug\Entities.pdb
