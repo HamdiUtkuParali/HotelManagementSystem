@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 namespace Business.Abstract
 {
-    internal interface IWorkerService
+    public interface IWorkerService
     {
         void Add(Worker worker);
         void Update(Worker worker);
         void Delete(Worker worker);
         List<Worker> GetAll();
         List<Worker> GetByName(string name);
-        List<Worker> GetByPosition(byte position);
+        List<Worker> GetByPosition(bool position);
+        Worker GetByUserName(string userName);
     }
 }

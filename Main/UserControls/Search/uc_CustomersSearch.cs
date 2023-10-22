@@ -19,7 +19,24 @@ namespace Main.UserControls
 
         private void uc_CustomersSearch_Load(object sender, EventArgs e)
         {
-
+            LoadCbxIsAdult();
         }
+
+        private void LoadCbxIsAdult()
+        {
+            Dictionary<string, bool> Items = new Dictionary<string, bool>();
+            Items.Add("Evet", true);
+            Items.Add("Hayır", false);
+
+            cbx_IsAdult.DataSource = new BindingSource(Items, null);
+            cbx_IsAdult.DisplayMember = "Key";
+            cbx_IsAdult.ValueMember = "Value";
+        }
+
+        public ComboBox GetCbx_IsAdult()
+        {
+            return cbx_IsAdult;
+        }
+
     }
 }

@@ -28,124 +28,123 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.lbl_EndDate = new System.Windows.Forms.Label();
+            this.lbl_StartDate = new System.Windows.Forms.Label();
+            this.lbl_RoomNo = new System.Windows.Forms.Label();
+            this.tbx_Name = new System.Windows.Forms.TextBox();
+            this.lbl_Name = new System.Windows.Forms.Label();
+            this.tbx_ResNo = new System.Windows.Forms.TextBox();
+            this.lbl_ResNo = new System.Windows.Forms.Label();
+            this.dtp_StartDate = new System.Windows.Forms.DateTimePicker();
+            this.dtp_EndDate = new System.Windows.Forms.DateTimePicker();
+            this.tbx_RoomNo = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // lbl_EndDate
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(531, 27);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(196, 33);
-            this.comboBox1.TabIndex = 27;
+            this.lbl_EndDate.AutoSize = true;
+            this.lbl_EndDate.Location = new System.Drawing.Point(810, 107);
+            this.lbl_EndDate.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_EndDate.Name = "lbl_EndDate";
+            this.lbl_EndDate.Size = new System.Drawing.Size(65, 25);
+            this.lbl_EndDate.TabIndex = 25;
+            this.lbl_EndDate.Text = "Çıkış:";
             // 
-            // label5
+            // lbl_StartDate
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(810, 107);
-            this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 25);
-            this.label5.TabIndex = 25;
-            this.label5.Text = "Çıkış:";
+            this.lbl_StartDate.AutoSize = true;
+            this.lbl_StartDate.Location = new System.Drawing.Point(810, 32);
+            this.lbl_StartDate.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_StartDate.Name = "lbl_StartDate";
+            this.lbl_StartDate.Size = new System.Drawing.Size(62, 25);
+            this.lbl_StartDate.TabIndex = 23;
+            this.lbl_StartDate.Text = "Giriş:";
             // 
-            // label6
+            // lbl_RoomNo
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(810, 32);
-            this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 25);
-            this.label6.TabIndex = 23;
-            this.label6.Text = "Giriş:";
+            this.lbl_RoomNo.AutoSize = true;
+            this.lbl_RoomNo.Location = new System.Drawing.Point(434, 30);
+            this.lbl_RoomNo.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_RoomNo.Name = "lbl_RoomNo";
+            this.lbl_RoomNo.Size = new System.Drawing.Size(91, 25);
+            this.lbl_RoomNo.TabIndex = 20;
+            this.lbl_RoomNo.Text = "Oda No:";
             // 
-            // label4
+            // tbx_Name
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(434, 30);
-            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 25);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Oda No:";
+            this.tbx_Name.Location = new System.Drawing.Point(142, 104);
+            this.tbx_Name.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tbx_Name.Name = "tbx_Name";
+            this.tbx_Name.Size = new System.Drawing.Size(196, 31);
+            this.tbx_Name.TabIndex = 19;
             // 
-            // textBox2
+            // lbl_Name
             // 
-            this.textBox2.Location = new System.Drawing.Point(142, 104);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(196, 31);
-            this.textBox2.TabIndex = 19;
+            this.lbl_Name.AutoSize = true;
+            this.lbl_Name.Location = new System.Drawing.Point(43, 108);
+            this.lbl_Name.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_Name.Name = "lbl_Name";
+            this.lbl_Name.Size = new System.Drawing.Size(56, 25);
+            this.lbl_Name.TabIndex = 18;
+            this.lbl_Name.Text = "İsim:";
             // 
-            // label2
+            // tbx_ResNo
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(43, 108);
-            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 25);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "İsim:";
+            this.tbx_ResNo.Location = new System.Drawing.Point(142, 27);
+            this.tbx_ResNo.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tbx_ResNo.Name = "tbx_ResNo";
+            this.tbx_ResNo.Size = new System.Drawing.Size(196, 31);
+            this.tbx_ResNo.TabIndex = 17;
             // 
-            // textBox1
+            // lbl_ResNo
             // 
-            this.textBox1.Location = new System.Drawing.Point(142, 27);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(196, 31);
-            this.textBox1.TabIndex = 17;
+            this.lbl_ResNo.AutoSize = true;
+            this.lbl_ResNo.Location = new System.Drawing.Point(43, 33);
+            this.lbl_ResNo.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_ResNo.Name = "lbl_ResNo";
+            this.lbl_ResNo.Size = new System.Drawing.Size(89, 25);
+            this.lbl_ResNo.TabIndex = 16;
+            this.lbl_ResNo.Text = "Rez No:";
             // 
-            // label1
+            // dtp_StartDate
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(43, 33);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 25);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Rez No:";
+            this.dtp_StartDate.Location = new System.Drawing.Point(920, 28);
+            this.dtp_StartDate.Name = "dtp_StartDate";
+            this.dtp_StartDate.Size = new System.Drawing.Size(196, 31);
+            this.dtp_StartDate.TabIndex = 28;
             // 
-            // dateTimePicker1
+            // dtp_EndDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(920, 28);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(196, 31);
-            this.dateTimePicker1.TabIndex = 28;
+            this.dtp_EndDate.Location = new System.Drawing.Point(920, 103);
+            this.dtp_EndDate.Name = "dtp_EndDate";
+            this.dtp_EndDate.Size = new System.Drawing.Size(196, 31);
+            this.dtp_EndDate.TabIndex = 29;
             // 
-            // dateTimePicker2
+            // tbx_RoomNo
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(920, 103);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(196, 31);
-            this.dateTimePicker2.TabIndex = 29;
+            this.tbx_RoomNo.Location = new System.Drawing.Point(531, 27);
+            this.tbx_RoomNo.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tbx_RoomNo.Name = "tbx_RoomNo";
+            this.tbx_RoomNo.Size = new System.Drawing.Size(196, 31);
+            this.tbx_RoomNo.TabIndex = 30;
             // 
             // uc_ReservationADU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tbx_RoomNo);
+            this.Controls.Add(this.dtp_EndDate);
+            this.Controls.Add(this.dtp_StartDate);
+            this.Controls.Add(this.lbl_EndDate);
+            this.Controls.Add(this.lbl_StartDate);
+            this.Controls.Add(this.lbl_RoomNo);
+            this.Controls.Add(this.tbx_Name);
+            this.Controls.Add(this.lbl_Name);
+            this.Controls.Add(this.tbx_ResNo);
+            this.Controls.Add(this.lbl_ResNo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "uc_ReservationADU";
             this.Size = new System.Drawing.Size(1179, 171);
             this.ResumeLayout(false);
@@ -154,16 +153,15 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label lbl_EndDate;
+        private System.Windows.Forms.Label lbl_StartDate;
+        private System.Windows.Forms.Label lbl_RoomNo;
+        private System.Windows.Forms.TextBox tbx_Name;
+        private System.Windows.Forms.Label lbl_Name;
+        private System.Windows.Forms.TextBox tbx_ResNo;
+        private System.Windows.Forms.Label lbl_ResNo;
+        private System.Windows.Forms.DateTimePicker dtp_StartDate;
+        private System.Windows.Forms.DateTimePicker dtp_EndDate;
+        private System.Windows.Forms.TextBox tbx_RoomNo;
     }
 }

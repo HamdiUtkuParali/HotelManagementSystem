@@ -15,6 +15,6 @@ namespace Entities.Concrete
         public long PhoneNo { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
-        public byte Position { get; set; }
+        public bool Position { get; set; }
     }
 }

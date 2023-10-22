@@ -30,8 +30,7 @@ namespace Business.Concrete
 
         public void Delete(Customer customer) 
         { 
-            try { _customerDal.Delete(customer); }
-            catch { throw new Exception("Hata!"); }
+            _customerDal.Delete(customer);
         }
 
         public List<Customer> GetAll() 
@@ -39,14 +38,14 @@ namespace Business.Concrete
             return _customerDal.GetAll();
         }
 
-        public List<Customer> GetByName(string Name)
+        public List<Customer> GetByName(string name)
         {
-            throw new NotImplementedException();
+            return _customerDal.GetAll(p=>p.Name.ToLower().Contains(name.ToLower()));
         }
 
-        public List<Customer> GetByIsNew(byte IsNew)
+        public List<Customer> GetByIsAdult(bool IsAdult)
         {
-            throw new NotImplementedException();
+            return _customerDal.GetAll(p=>p.IsAdult==IsAdult);
         }
     }
 }

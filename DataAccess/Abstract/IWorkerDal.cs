@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Abstract
 {
-    internal interface IWorkerDal:IEntityRepository<Worker>
+    public interface IWorkerDal:IEntityRepository<Worker>
     {
     }
 }

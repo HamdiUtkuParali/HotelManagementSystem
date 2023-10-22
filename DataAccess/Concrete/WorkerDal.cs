@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete
 {
-    internal class WorkerDal:EntityRepository<Worker,Context>,IWorkerDal
+    public class WorkerDal:EntityRepository<Worker,Context>,IWorkerDal
     {
     }
 }

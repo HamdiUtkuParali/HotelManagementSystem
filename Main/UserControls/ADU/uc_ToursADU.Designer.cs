@@ -28,104 +28,103 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.tbx_CurrentSize = new System.Windows.Forms.TextBox();
+            this.lbl_CurrentSize = new System.Windows.Forms.Label();
+            this.lbl_Price = new System.Windows.Forms.Label();
+            this.tbx_Capacity = new System.Windows.Forms.TextBox();
+            this.lbl_Capacity = new System.Windows.Forms.Label();
+            this.tbx_TourName = new System.Windows.Forms.TextBox();
+            this.lbl_TourName = new System.Windows.Forms.Label();
+            this.tbx_Price = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // tbx_CurrentSize
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(529, 26);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(196, 33);
-            this.comboBox1.TabIndex = 27;
+            this.tbx_CurrentSize.Location = new System.Drawing.Point(529, 103);
+            this.tbx_CurrentSize.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tbx_CurrentSize.Name = "tbx_CurrentSize";
+            this.tbx_CurrentSize.Size = new System.Drawing.Size(196, 31);
+            this.tbx_CurrentSize.TabIndex = 22;
             // 
-            // textBox3
+            // lbl_CurrentSize
             // 
-            this.textBox3.Location = new System.Drawing.Point(529, 103);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(196, 31);
-            this.textBox3.TabIndex = 22;
+            this.lbl_CurrentSize.AutoSize = true;
+            this.lbl_CurrentSize.Location = new System.Drawing.Point(432, 106);
+            this.lbl_CurrentSize.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_CurrentSize.Name = "lbl_CurrentSize";
+            this.lbl_CurrentSize.Size = new System.Drawing.Size(88, 25);
+            this.lbl_CurrentSize.TabIndex = 21;
+            this.lbl_CurrentSize.Text = "Mevcut:";
             // 
-            // label3
+            // lbl_Price
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(432, 106);
-            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 25);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "Mevcut:";
+            this.lbl_Price.AutoSize = true;
+            this.lbl_Price.Location = new System.Drawing.Point(432, 29);
+            this.lbl_Price.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_Price.Name = "lbl_Price";
+            this.lbl_Price.Size = new System.Drawing.Size(69, 25);
+            this.lbl_Price.TabIndex = 20;
+            this.lbl_Price.Text = "Ücret:";
             // 
-            // label4
+            // tbx_Capacity
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(432, 29);
-            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 25);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Ücret:";
+            this.tbx_Capacity.Location = new System.Drawing.Point(140, 103);
+            this.tbx_Capacity.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tbx_Capacity.Name = "tbx_Capacity";
+            this.tbx_Capacity.Size = new System.Drawing.Size(196, 31);
+            this.tbx_Capacity.TabIndex = 19;
             // 
-            // textBox2
+            // lbl_Capacity
             // 
-            this.textBox2.Location = new System.Drawing.Point(140, 103);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(196, 31);
-            this.textBox2.TabIndex = 19;
+            this.lbl_Capacity.AutoSize = true;
+            this.lbl_Capacity.Location = new System.Drawing.Point(41, 107);
+            this.lbl_Capacity.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_Capacity.Name = "lbl_Capacity";
+            this.lbl_Capacity.Size = new System.Drawing.Size(102, 25);
+            this.lbl_Capacity.TabIndex = 18;
+            this.lbl_Capacity.Text = "Kapasite:";
             // 
-            // label2
+            // tbx_TourName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(41, 107);
-            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 25);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Kapasite:";
+            this.tbx_TourName.Location = new System.Drawing.Point(140, 26);
+            this.tbx_TourName.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tbx_TourName.Name = "tbx_TourName";
+            this.tbx_TourName.Size = new System.Drawing.Size(196, 31);
+            this.tbx_TourName.TabIndex = 17;
             // 
-            // textBox1
+            // lbl_TourName
             // 
-            this.textBox1.Location = new System.Drawing.Point(140, 26);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(196, 31);
-            this.textBox1.TabIndex = 17;
+            this.lbl_TourName.AutoSize = true;
+            this.lbl_TourName.Location = new System.Drawing.Point(41, 32);
+            this.lbl_TourName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_TourName.Name = "lbl_TourName";
+            this.lbl_TourName.Size = new System.Drawing.Size(87, 25);
+            this.lbl_TourName.TabIndex = 16;
+            this.lbl_TourName.Text = "Tur Adı:";
             // 
-            // label1
+            // tbx_Price
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 32);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 25);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Tur Adı:";
+            this.tbx_Price.Location = new System.Drawing.Point(529, 26);
+            this.tbx_Price.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tbx_Price.Name = "tbx_Price";
+            this.tbx_Price.Size = new System.Drawing.Size(196, 31);
+            this.tbx_Price.TabIndex = 23;
             // 
             // uc_ToursADU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tbx_Price);
+            this.Controls.Add(this.tbx_CurrentSize);
+            this.Controls.Add(this.lbl_CurrentSize);
+            this.Controls.Add(this.lbl_Price);
+            this.Controls.Add(this.tbx_Capacity);
+            this.Controls.Add(this.lbl_Capacity);
+            this.Controls.Add(this.tbx_TourName);
+            this.Controls.Add(this.lbl_TourName);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "uc_ToursADU";
             this.Size = new System.Drawing.Size(1179, 171);
             this.ResumeLayout(false);
@@ -134,14 +133,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tbx_CurrentSize;
+        private System.Windows.Forms.Label lbl_CurrentSize;
+        private System.Windows.Forms.Label lbl_Price;
+        private System.Windows.Forms.TextBox tbx_Capacity;
+        private System.Windows.Forms.Label lbl_Capacity;
+        private System.Windows.Forms.TextBox tbx_TourName;
+        private System.Windows.Forms.Label lbl_TourName;
+        private System.Windows.Forms.TextBox tbx_Price;
     }
 }

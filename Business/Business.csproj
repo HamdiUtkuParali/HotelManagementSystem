@@ -47,6 +47,7 @@
     <Compile Include="Abstract\ITourService.cs" />
     <Compile Include="Abstract\IWorkerService.cs" />
     <Compile Include="Concrete\CustomerManager.cs" />
+    <Compile Include="Concrete\WorkerManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

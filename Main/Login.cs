@@ -1,4 +1,10 @@
-﻿using System;
+﻿using Business.Abstract;
+using Business.Concrete;
+using DataAccess.Abstract;
+using DataAccess.Concrete;
+using Entities.Concrete;
+using Main.UserControls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +18,14 @@ namespace Main
 {
     public partial class Login : Form
     {
+
         public Login()
         {
             InitializeComponent();
+            _workerService = new WorkerManager(new WorkerDal());
         }
+
+        private IWorkerService _workerService;
 
         private void pbx_Exit_Click(object sender, EventArgs e)
         {
@@ -24,18 +34,26 @@ namespace Main
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            if(tbx_UserName.Text == "Utku Paralı" &&  tbx_Password.Text == "12345")
+            Worker worker = _workerService.GetByUserName(tbx_UserName.Text);
+            if(worker != null && tbx_Password.Text==worker.Password)
             {
                 lbl_ErrorText.Visible = false;
                 Dashboard ds = new Dashboard();
                 this.Hide();
+                if(worker.Position)
+                {
+                    uc_Customer myUcCustomer = ds.GetUcCustomer();
+                    myUcCustomer.ChangeVisibleGbxADU();
+                }
                 ds.Show();
+                
             }
             else 
             {
                 lbl_ErrorText.Visible = true;
                 tbx_Password.Clear();
             }
+
         }
     }
 }

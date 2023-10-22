@@ -136,6 +136,12 @@
     <Compile Include="UserControls\Search\uc_WorkersSearch.Designer.cs">
       <DependentUpon>uc_WorkersSearch.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\uc_Customer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\uc_Customer.Designer.cs">
+      <DependentUpon>uc_Customer.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Search\uc_WorkersSearch.resx">
       <DependentUpon>uc_WorkersSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\uc_Customer.resx">
+      <DependentUpon>uc_Customer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -14,7 +14,7 @@ namespace Business.Abstract
         void Delete(Customer customer);
         List<Customer> GetAll();
         List<Customer> GetByName(string Name);
-        List<Customer> GetByIsNew(byte IsNew);
+        List<Customer> GetByIsAdult(bool IsAdult);
 
     }
 }

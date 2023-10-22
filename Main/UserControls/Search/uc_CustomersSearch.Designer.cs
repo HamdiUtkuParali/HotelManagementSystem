@@ -28,62 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.tbx_Name = new System.Windows.Forms.TextBox();
+            this.lbl_Name = new System.Windows.Forms.Label();
+            this.cbx_IsAdult = new System.Windows.Forms.ComboBox();
+            this.lbl_IsAdult = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tbx_Name
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(48, 52);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(450, 31);
-            this.textBox1.TabIndex = 5;
+            this.tbx_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tbx_Name.Location = new System.Drawing.Point(48, 52);
+            this.tbx_Name.Margin = new System.Windows.Forms.Padding(6);
+            this.tbx_Name.Name = "tbx_Name";
+            this.tbx_Name.Size = new System.Drawing.Size(450, 31);
+            this.tbx_Name.TabIndex = 5;
             // 
-            // comboBox1
+            // lbl_Name
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(578, 50);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(6);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(450, 33);
-            this.comboBox1.TabIndex = 6;
+            this.lbl_Name.AutoSize = true;
+            this.lbl_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_Name.Location = new System.Drawing.Point(43, 21);
+            this.lbl_Name.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lbl_Name.Name = "lbl_Name";
+            this.lbl_Name.Size = new System.Drawing.Size(56, 25);
+            this.lbl_Name.TabIndex = 4;
+            this.lbl_Name.Text = "İsim:";
             // 
-            // label2
+            // cbx_IsAdult
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(573, 21);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 25);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Yeni/Eski:";
+            this.cbx_IsAdult.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cbx_IsAdult.FormattingEnabled = true;
+            this.cbx_IsAdult.Location = new System.Drawing.Point(578, 50);
+            this.cbx_IsAdult.Margin = new System.Windows.Forms.Padding(6);
+            this.cbx_IsAdult.Name = "cbx_IsAdult";
+            this.cbx_IsAdult.Size = new System.Drawing.Size(450, 33);
+            this.cbx_IsAdult.TabIndex = 6;
             // 
-            // label1
+            // lbl_IsAdult
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(43, 21);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 25);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "İsim:";
+            this.lbl_IsAdult.AutoSize = true;
+            this.lbl_IsAdult.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_IsAdult.Location = new System.Drawing.Point(573, 21);
+            this.lbl_IsAdult.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lbl_IsAdult.Name = "lbl_IsAdult";
+            this.lbl_IsAdult.Size = new System.Drawing.Size(89, 25);
+            this.lbl_IsAdult.TabIndex = 7;
+            this.lbl_IsAdult.Text = "Yetişkin";
             // 
             // uc_CustomersSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tbx_Name);
+            this.Controls.Add(this.cbx_IsAdult);
+            this.Controls.Add(this.lbl_IsAdult);
+            this.Controls.Add(this.lbl_Name);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "uc_CustomersSearch";
@@ -96,9 +96,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tbx_Name;
+        private System.Windows.Forms.Label lbl_Name;
+        private System.Windows.Forms.ComboBox cbx_IsAdult;
+        private System.Windows.Forms.Label lbl_IsAdult;
     }
 }

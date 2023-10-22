@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnl_MainMenu = new System.Windows.Forms.Panel();
             this.btn_Customers = new System.Windows.Forms.Button();
             this.btn_Workers = new System.Windows.Forms.Button();
@@ -39,33 +37,12 @@
             this.btn_Reservations = new System.Windows.Forms.Button();
             this.pbx_Exit = new System.Windows.Forms.PictureBox();
             this.pbx_Minimize = new System.Windows.Forms.PictureBox();
-            this.dgwMain = new System.Windows.Forms.DataGridView();
-            this.gbxSearch = new System.Windows.Forms.GroupBox();
-            this.pnlSearch = new System.Windows.Forms.Panel();
-            this.uc_WorkersSearch1 = new Main.UserControls.uc_WorkersSearch();
-            this.uc_ToursSearch1 = new Main.UserControls.uc_ToursSearch();
-            this.uc_RoomsSearch1 = new Main.UserControls.uc_RoomsSearch();
-            this.uc_ReservationSearch1 = new Main.UserControls.uc_ReservationSearch();
-            this.uc_CustomersSearch1 = new Main.UserControls.uc_CustomersSearch();
-            this.gbxADU = new System.Windows.Forms.GroupBox();
-            this.lbl_Operation = new System.Windows.Forms.Label();
-            this.cbx_Operation = new System.Windows.Forms.ComboBox();
-            this.btn_Clear = new System.Windows.Forms.Button();
-            this.btn_Okey = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.uc_WorkersADU1 = new Main.UserControls.uc_WorkersADU();
-            this.uc_ToursADU1 = new Main.UserControls.uc_ToursADU();
-            this.uc_RoomsADU1 = new Main.UserControls.uc_RoomsADU();
-            this.uc_ReservationADU1 = new Main.UserControls.uc_ReservationADU();
-            this.uc_CustomersADU1 = new Main.UserControls.uc_CustomersADU();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.uc_Customer1 = new Main.UserControls.uc_Customer();
             this.pnl_MainMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_Exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_Minimize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgwMain)).BeginInit();
-            this.gbxSearch.SuspendLayout();
-            this.pnlSearch.SuspendLayout();
-            this.gbxADU.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_MainMenu
@@ -101,7 +78,6 @@
             this.btn_Workers.TabIndex = 1;
             this.btn_Workers.Text = "Çalışanlar";
             this.btn_Workers.UseVisualStyleBackColor = true;
-            this.btn_Workers.Click += new System.EventHandler(this.btn_Workers_Click);
             // 
             // btn_Rooms
             // 
@@ -112,7 +88,6 @@
             this.btn_Rooms.TabIndex = 2;
             this.btn_Rooms.Text = "Odalar";
             this.btn_Rooms.UseVisualStyleBackColor = true;
-            this.btn_Rooms.Click += new System.EventHandler(this.btn_Rooms_Click);
             // 
             // btn_Tours
             // 
@@ -123,7 +98,6 @@
             this.btn_Tours.TabIndex = 10;
             this.btn_Tours.Text = "Turlar";
             this.btn_Tours.UseVisualStyleBackColor = true;
-            this.btn_Tours.Click += new System.EventHandler(this.btn_Tours_Click);
             // 
             // btn_Reservations
             // 
@@ -134,7 +108,6 @@
             this.btn_Reservations.TabIndex = 11;
             this.btn_Reservations.Text = "Rezervasyonlar";
             this.btn_Reservations.UseVisualStyleBackColor = true;
-            this.btn_Reservations.Click += new System.EventHandler(this.btn_Reservations_Click);
             // 
             // pbx_Exit
             // 
@@ -158,244 +131,23 @@
             this.pbx_Minimize.TabStop = false;
             this.pbx_Minimize.Click += new System.EventHandler(this.pbx_Minimize_Click);
             // 
-            // dgwMain
+            // panel1
             // 
-            this.dgwMain.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgwMain.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgwMain.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgwMain.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
-            this.dgwMain.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgwMain.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgwMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwMain.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgwMain.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgwMain.Location = new System.Drawing.Point(175, 432);
-            this.dgwMain.Margin = new System.Windows.Forms.Padding(50);
-            this.dgwMain.Name = "dgwMain";
-            this.dgwMain.ReadOnly = true;
-            this.dgwMain.Size = new System.Drawing.Size(1500, 362);
-            this.dgwMain.TabIndex = 10;
-            this.dgwMain.Visible = false;
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.uc_Customer1);
+            this.panel1.Location = new System.Drawing.Point(175, 270);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1506, 744);
+            this.panel1.TabIndex = 13;
             // 
-            // gbxSearch
+            // uc_Customer1
             // 
-            this.gbxSearch.Controls.Add(this.pnlSearch);
-            this.gbxSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.gbxSearch.ForeColor = System.Drawing.Color.White;
-            this.gbxSearch.Location = new System.Drawing.Point(175, 270);
-            this.gbxSearch.Name = "gbxSearch";
-            this.gbxSearch.Size = new System.Drawing.Size(1500, 154);
-            this.gbxSearch.TabIndex = 11;
-            this.gbxSearch.TabStop = false;
-            this.gbxSearch.Text = "Ara";
-            this.gbxSearch.Visible = false;
-            // 
-            // pnlSearch
-            // 
-            this.pnlSearch.Controls.Add(this.uc_WorkersSearch1);
-            this.pnlSearch.Controls.Add(this.uc_ToursSearch1);
-            this.pnlSearch.Controls.Add(this.uc_RoomsSearch1);
-            this.pnlSearch.Controls.Add(this.uc_ReservationSearch1);
-            this.pnlSearch.Controls.Add(this.uc_CustomersSearch1);
-            this.pnlSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.pnlSearch.Location = new System.Drawing.Point(6, 30);
-            this.pnlSearch.Name = "pnlSearch";
-            this.pnlSearch.Size = new System.Drawing.Size(1488, 118);
-            this.pnlSearch.TabIndex = 4;
-            // 
-            // uc_WorkersSearch1
-            // 
-            this.uc_WorkersSearch1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.uc_WorkersSearch1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.uc_WorkersSearch1.Location = new System.Drawing.Point(0, 0);
-            this.uc_WorkersSearch1.Margin = new System.Windows.Forms.Padding(6);
-            this.uc_WorkersSearch1.Name = "uc_WorkersSearch1";
-            this.uc_WorkersSearch1.Size = new System.Drawing.Size(1488, 118);
-            this.uc_WorkersSearch1.TabIndex = 4;
-            this.uc_WorkersSearch1.Visible = false;
-            // 
-            // uc_ToursSearch1
-            // 
-            this.uc_ToursSearch1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.uc_ToursSearch1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.uc_ToursSearch1.Location = new System.Drawing.Point(0, 0);
-            this.uc_ToursSearch1.Margin = new System.Windows.Forms.Padding(6);
-            this.uc_ToursSearch1.Name = "uc_ToursSearch1";
-            this.uc_ToursSearch1.Size = new System.Drawing.Size(1488, 118);
-            this.uc_ToursSearch1.TabIndex = 3;
-            this.uc_ToursSearch1.Visible = false;
-            // 
-            // uc_RoomsSearch1
-            // 
-            this.uc_RoomsSearch1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.uc_RoomsSearch1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.uc_RoomsSearch1.Location = new System.Drawing.Point(0, 0);
-            this.uc_RoomsSearch1.Margin = new System.Windows.Forms.Padding(6);
-            this.uc_RoomsSearch1.Name = "uc_RoomsSearch1";
-            this.uc_RoomsSearch1.Size = new System.Drawing.Size(1488, 118);
-            this.uc_RoomsSearch1.TabIndex = 2;
-            this.uc_RoomsSearch1.Visible = false;
-            // 
-            // uc_ReservationSearch1
-            // 
-            this.uc_ReservationSearch1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.uc_ReservationSearch1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.uc_ReservationSearch1.Location = new System.Drawing.Point(0, 0);
-            this.uc_ReservationSearch1.Margin = new System.Windows.Forms.Padding(6);
-            this.uc_ReservationSearch1.Name = "uc_ReservationSearch1";
-            this.uc_ReservationSearch1.Size = new System.Drawing.Size(1488, 118);
-            this.uc_ReservationSearch1.TabIndex = 1;
-            this.uc_ReservationSearch1.Visible = false;
-            // 
-            // uc_CustomersSearch1
-            // 
-            this.uc_CustomersSearch1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.uc_CustomersSearch1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.uc_CustomersSearch1.Location = new System.Drawing.Point(0, 0);
-            this.uc_CustomersSearch1.Margin = new System.Windows.Forms.Padding(6);
-            this.uc_CustomersSearch1.Name = "uc_CustomersSearch1";
-            this.uc_CustomersSearch1.Size = new System.Drawing.Size(1488, 118);
-            this.uc_CustomersSearch1.TabIndex = 0;
-            this.uc_CustomersSearch1.Visible = false;
-            // 
-            // gbxADU
-            // 
-            this.gbxADU.Controls.Add(this.lbl_Operation);
-            this.gbxADU.Controls.Add(this.cbx_Operation);
-            this.gbxADU.Controls.Add(this.btn_Clear);
-            this.gbxADU.Controls.Add(this.btn_Okey);
-            this.gbxADU.Controls.Add(this.panel2);
-            this.gbxADU.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.gbxADU.ForeColor = System.Drawing.Color.White;
-            this.gbxADU.Location = new System.Drawing.Point(175, 807);
-            this.gbxADU.Name = "gbxADU";
-            this.gbxADU.Size = new System.Drawing.Size(1500, 207);
-            this.gbxADU.TabIndex = 12;
-            this.gbxADU.TabStop = false;
-            this.gbxADU.Text = "Ekle/Sil/Güncelle";
-            this.gbxADU.Visible = false;
-            // 
-            // lbl_Operation
-            // 
-            this.lbl_Operation.AutoSize = true;
-            this.lbl_Operation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_Operation.Location = new System.Drawing.Point(24, 62);
-            this.lbl_Operation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_Operation.Name = "lbl_Operation";
-            this.lbl_Operation.Size = new System.Drawing.Size(57, 20);
-            this.lbl_Operation.TabIndex = 18;
-            this.lbl_Operation.Text = "İşlem:";
-            // 
-            // cbx_Operation
-            // 
-            this.cbx_Operation.FormattingEnabled = true;
-            this.cbx_Operation.Location = new System.Drawing.Point(119, 55);
-            this.cbx_Operation.Name = "cbx_Operation";
-            this.cbx_Operation.Size = new System.Drawing.Size(158, 33);
-            this.cbx_Operation.TabIndex = 20;
-            // 
-            // btn_Clear
-            // 
-            this.btn_Clear.BackColor = System.Drawing.Color.Brown;
-            this.btn_Clear.ForeColor = System.Drawing.Color.White;
-            this.btn_Clear.Location = new System.Drawing.Point(28, 123);
-            this.btn_Clear.Name = "btn_Clear";
-            this.btn_Clear.Size = new System.Drawing.Size(101, 35);
-            this.btn_Clear.TabIndex = 21;
-            this.btn_Clear.Text = "Temizle";
-            this.btn_Clear.UseVisualStyleBackColor = false;
-            // 
-            // btn_Okey
-            // 
-            this.btn_Okey.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.btn_Okey.ForeColor = System.Drawing.Color.White;
-            this.btn_Okey.Location = new System.Drawing.Point(152, 123);
-            this.btn_Okey.Name = "btn_Okey";
-            this.btn_Okey.Size = new System.Drawing.Size(125, 35);
-            this.btn_Okey.TabIndex = 19;
-            this.btn_Okey.Text = "Onay";
-            this.btn_Okey.UseVisualStyleBackColor = false;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.uc_WorkersADU1);
-            this.panel2.Controls.Add(this.uc_ToursADU1);
-            this.panel2.Controls.Add(this.uc_RoomsADU1);
-            this.panel2.Controls.Add(this.uc_ReservationADU1);
-            this.panel2.Controls.Add(this.uc_CustomersADU1);
-            this.panel2.Location = new System.Drawing.Point(315, 23);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1179, 171);
-            this.panel2.TabIndex = 0;
-            // 
-            // uc_WorkersADU1
-            // 
-            this.uc_WorkersADU1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.uc_WorkersADU1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.uc_WorkersADU1.Location = new System.Drawing.Point(0, 0);
-            this.uc_WorkersADU1.Margin = new System.Windows.Forms.Padding(6);
-            this.uc_WorkersADU1.Name = "uc_WorkersADU1";
-            this.uc_WorkersADU1.Size = new System.Drawing.Size(1179, 171);
-            this.uc_WorkersADU1.TabIndex = 4;
-            this.uc_WorkersADU1.Visible = false;
-            // 
-            // uc_ToursADU1
-            // 
-            this.uc_ToursADU1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.uc_ToursADU1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.uc_ToursADU1.Location = new System.Drawing.Point(0, 0);
-            this.uc_ToursADU1.Margin = new System.Windows.Forms.Padding(6);
-            this.uc_ToursADU1.Name = "uc_ToursADU1";
-            this.uc_ToursADU1.Size = new System.Drawing.Size(1179, 171);
-            this.uc_ToursADU1.TabIndex = 3;
-            this.uc_ToursADU1.Visible = false;
-            // 
-            // uc_RoomsADU1
-            // 
-            this.uc_RoomsADU1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.uc_RoomsADU1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.uc_RoomsADU1.Location = new System.Drawing.Point(0, 0);
-            this.uc_RoomsADU1.Margin = new System.Windows.Forms.Padding(6);
-            this.uc_RoomsADU1.Name = "uc_RoomsADU1";
-            this.uc_RoomsADU1.Size = new System.Drawing.Size(1179, 171);
-            this.uc_RoomsADU1.TabIndex = 2;
-            this.uc_RoomsADU1.Visible = false;
-            // 
-            // uc_ReservationADU1
-            // 
-            this.uc_ReservationADU1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.uc_ReservationADU1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.uc_ReservationADU1.Location = new System.Drawing.Point(0, 0);
-            this.uc_ReservationADU1.Margin = new System.Windows.Forms.Padding(6);
-            this.uc_ReservationADU1.Name = "uc_ReservationADU1";
-            this.uc_ReservationADU1.Size = new System.Drawing.Size(1179, 171);
-            this.uc_ReservationADU1.TabIndex = 1;
-            this.uc_ReservationADU1.Visible = false;
-            // 
-            // uc_CustomersADU1
-            // 
-            this.uc_CustomersADU1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.uc_CustomersADU1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.uc_CustomersADU1.Location = new System.Drawing.Point(0, 0);
-            this.uc_CustomersADU1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.uc_CustomersADU1.Name = "uc_CustomersADU1";
-            this.uc_CustomersADU1.Size = new System.Drawing.Size(1179, 171);
-            this.uc_CustomersADU1.TabIndex = 0;
-            this.uc_CustomersADU1.Visible = false;
+            this.uc_Customer1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.uc_Customer1.Location = new System.Drawing.Point(0, 0);
+            this.uc_Customer1.Name = "uc_Customer1";
+            this.uc_Customer1.Size = new System.Drawing.Size(1506, 744);
+            this.uc_Customer1.TabIndex = 0;
+            this.uc_Customer1.Visible = false;
             // 
             // Dashboard
             // 
@@ -406,9 +158,7 @@
             this.Controls.Add(this.pbx_Minimize);
             this.Controls.Add(this.pbx_Exit);
             this.Controls.Add(this.pnl_MainMenu);
-            this.Controls.Add(this.gbxSearch);
-            this.Controls.Add(this.dgwMain);
-            this.Controls.Add(this.gbxADU);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -417,12 +167,7 @@
             this.pnl_MainMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbx_Exit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_Minimize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgwMain)).EndInit();
-            this.gbxSearch.ResumeLayout(false);
-            this.pnlSearch.ResumeLayout(false);
-            this.gbxADU.ResumeLayout(false);
-            this.gbxADU.PerformLayout();
-            this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -435,26 +180,9 @@
         private System.Windows.Forms.Button btn_Customers;
         private System.Windows.Forms.PictureBox pbx_Exit;
         private System.Windows.Forms.PictureBox pbx_Minimize;
-        private System.Windows.Forms.DataGridView dgwMain;
         private System.Windows.Forms.Button btn_Reservations;
         private System.Windows.Forms.Button btn_Tours;
-        private System.Windows.Forms.GroupBox gbxSearch;
-        private System.Windows.Forms.GroupBox gbxADU;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btn_Clear;
-        private System.Windows.Forms.ComboBox cbx_Operation;
-        private System.Windows.Forms.Button btn_Okey;
-        private System.Windows.Forms.Label lbl_Operation;
-        private System.Windows.Forms.Panel pnlSearch;
-        private UserControls.uc_WorkersSearch uc_WorkersSearch1;
-        private UserControls.uc_ToursSearch uc_ToursSearch1;
-        private UserControls.uc_RoomsSearch uc_RoomsSearch1;
-        private UserControls.uc_ReservationSearch uc_ReservationSearch1;
-        private UserControls.uc_CustomersSearch uc_CustomersSearch1;
-        private UserControls.uc_WorkersADU uc_WorkersADU1;
-        private UserControls.uc_ToursADU uc_ToursADU1;
-        private UserControls.uc_RoomsADU uc_RoomsADU1;
-        private UserControls.uc_ReservationADU uc_ReservationADU1;
-        private UserControls.uc_CustomersADU uc_CustomersADU1;
+        private System.Windows.Forms.Panel panel1;
+        private UserControls.uc_Customer uc_Customer1;
     }
 }

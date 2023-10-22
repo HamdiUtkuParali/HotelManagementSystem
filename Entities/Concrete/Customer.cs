@@ -16,7 +16,6 @@ namespace Entities.Concrete
         public long PhoneNo { get; set; }
         public int? RoomNo { get; set; }
         public int? TourId { get; set; }
-        public bool IsNew {get;set;}
 
     }
 }

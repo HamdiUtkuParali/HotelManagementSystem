@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Business.Abstract;
 using Business.Concrete;
 using DataAccess.Concrete;
+using Main.UserControls;
 
 namespace Main
 {
@@ -18,10 +19,7 @@ namespace Main
         public Dashboard()
         {
             InitializeComponent();
-            _customerService = new CustomerManager(new CustomerDal());
         }
-
-        private ICustomerService _customerService;
 
         private void pbx_Exit_Click(object sender, EventArgs e)
         {
@@ -33,48 +31,24 @@ namespace Main
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void StartupSetting()
-        {
-            if(gbxSearch.Visible == false || dgwMain.Visible == false )
-            gbxSearch.Visible = true;
-            dgwMain.Visible = true;
-        }
-
         private void btn_Customers_Click(object sender, EventArgs e)
         {
-            StartupSetting();
-            uc_CustomersSearch1.Visible = true;
-            uc_CustomersSearch1.BringToFront();
-            dgwMain.DataSource = _customerService.GetAll();
+            
+            uc_Customer1.Visible = true;
+            uc_Customer1.BringToFront();
+            uc_Customer1.LoadCustomers();
+            uc_Customer1.LoadBoolList();
+            uc_Customer1.LoadOperationList();
             
         }
 
-        private void btn_Workers_Click(object sender, EventArgs e)
+        public uc_Customer GetUcCustomer() 
         {
-            StartupSetting();
-            uc_WorkersSearch1.Visible = true;
-            uc_WorkersSearch1.BringToFront();
+            return uc_Customer1;
         }
 
-        private void btn_Rooms_Click(object sender, EventArgs e)
-        {
-            StartupSetting();
-            uc_RoomsSearch1.Visible = true;
-            uc_RoomsSearch1.BringToFront();
-        }
 
-        private void btn_Tours_Click(object sender, EventArgs e)
-        {
-            StartupSetting();
-            uc_ToursSearch1.Visible = true;
-            uc_ToursSearch1.BringToFront();
-        }
+        // dgwMain.DataSource = _customerService.GetByIsAdult(Convert.ToBoolean(cbx_IsAdult.SelectedValue));
 
-        private void btn_Reservations_Click(object sender, EventArgs e)
-        {
-            StartupSetting();
-            uc_ReservationSearch1.Visible = true;
-            uc_ReservationSearch1.BringToFront();
-        }
     }
 }
